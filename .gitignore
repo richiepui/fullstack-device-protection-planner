@@ -1,0 +1,38 @@
+# Node.js
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local environment variables
+**/.env
+**/.env.local
+
+# Logs
+logs/
+*.log
+
+# Runtime data
+pids/
+*.pid
+*.seed
+
+# Coverage directory used by testing tools
+coverage/
+
+# IDE specific files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Front-end specific
+**/build/
+**/dist/
+
+# Other
+.DS_Store
+Thumbs.db
