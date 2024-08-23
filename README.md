@@ -1,6 +1,8 @@
 
 # Fullstack-Device-Protection-Planner
 
+Github Link: https://github.com/richiepui/fullstack-device-protection-planner/tree/main
+
 ## Overview
 
 The **Device Protection Planner** is a web application designed for Asurion. The app allows users to manage their devices' protection plans, receive AI-generated maintenance tips, and track protection plans effectively. The application showcases frontend design, backend API development
