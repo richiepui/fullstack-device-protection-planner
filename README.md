@@ -77,7 +77,7 @@ cd fullstack-device-protection-planner
 1. Navigate to the `frontend` directory:
 
     ```bash
-    cd frontend
+    cd device-protection-app
     ```
 
 2. Install dependencies:
