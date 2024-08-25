@@ -1,6 +1,6 @@
 import { Box, Flex, Text, Image} from '@chakra-ui/react';
 
-export default function DefaultLayout({children}: {children: React.ReactNode}){
+const DefaultLayout = ({children}: {children: React.ReactNode}) => {
     
     return (
         <Flex
@@ -18,8 +18,10 @@ export default function DefaultLayout({children}: {children: React.ReactNode}){
     )
 }
 
+export default DefaultLayout
 
-function Header() {
+
+const Header = () => {
     return (
         <Flex as="header" bg="white" color="black" p={3} boxShadow="sm" align="center" justify="space-between">
             <Image src="../images/asurion-logo_svg.svg" alt="Asurion Logo" pl={2} height="40px" />
@@ -27,7 +29,7 @@ function Header() {
     )
 }
 
-function Footer() {
+const Footer = () => {
     return (
       <Box bg="purple.500" color="white" p={4} textAlign="center" mt="auto">
         <Text>&copy; 2024 Asurion. All rights reserved.</Text>

@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react'
 import { useRouter } from 'next/router';
 import Cookies from 'js-cookie'
-import { RootState, useAppDispatch } from '@/store/store';
+import { useAppDispatch } from '@/store/hook';
+import { RootState } from '@/store/store';
 import { useSelector } from 'react-redux';
 import { verifyJwtThunk } from '@/store/slices/auth/authThunk';
 
-export default function AuthLayout({children}: {children: React.ReactNode}) {
+const AuthLayout = ({children}: {children: React.ReactNode}) => {
 
     const dispatch = useAppDispatch();
     const jwtToken = useSelector((state: RootState) => state.auth.token) || "";
@@ -35,3 +36,5 @@ export default function AuthLayout({children}: {children: React.ReactNode}) {
         <>{children}</>
     )
 }
+
+export default AuthLayout

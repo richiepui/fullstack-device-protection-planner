@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { Box, SimpleGrid, Flex, useToast, Heading, Icon } from '@chakra-ui/react';
 import DeviceCard from './DeviceCard';
-import { RootState, useAppDispatch } from '@/store/store';
+import { useAppDispatch } from '@/store/hook';
+import { RootState } from '@/store/store';
 import { fetchDevicesThunk } from '@/store/slices/device/deviceThunk';
 import { APIError } from '@/common/APIError';
 import { generateErrorToast } from '@/common/util';
