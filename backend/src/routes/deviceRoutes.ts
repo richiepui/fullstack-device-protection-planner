@@ -5,7 +5,8 @@ import {
     updateDevice, 
     deleteDevice, 
     addDeviceProtectionPlan, 
-    extendProtectionPlan
+    extendProtectionPlan,
+    getAIRecommendations
 } from '../controllers/device/deviceController';
 
 
@@ -19,5 +20,6 @@ router.patch('/:id', auth, updateDevice); // Update a Specific Device based on D
 router.delete('/:id', auth, deleteDevice); // Delete a Specific Device based on Device ID
 router.post('/:id/protection-plan', auth, addDeviceProtectionPlan); // Add Protection Plan to a Specific Device
 router.patch('/:id/protection-plan/extend', auth, extendProtectionPlan); // Extend Protection Plan for a Specific Device
+router.post('/ai-recommendations', auth, getAIRecommendations); // Get AI Recommendations from Open AI
 
 export default router;

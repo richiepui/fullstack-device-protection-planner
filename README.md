@@ -11,13 +11,13 @@ The **Device Protection Planner** is a web application designed for Asurion. The
 
 - **Device Management**: Add, view, edit, and delete devices.
 - **Protection Plans**: Add and extend protection plans for devices.
-- **Generative AI**: Receive AI-generated tips and recommendations based on the device type and age.
+- **Generative AI**: Receive AI-generated tips and recommendations based on the device type and age (API Only)
 - **Responsive Design**: Built with Chakra UI for a responsive user experience.
 - **JWT Authentication**: Secure user authentication using JSON Web Tokens.
 
 ## Features Not Completed
 
-- **Generative AI**: To produce tips and suggestions for devices.
+- **Generative AI**: Not done for the UI
 
 ## Prerequisites
 
@@ -51,11 +51,7 @@ cd fullstack-device-protection-planner
     npm install
     ```
 
-3. Create a `.env` file from the provided `.env.example`:
-
-    ```bash
-    cp .env.example .env
-    ```
+3. Create a `.env` file.
 
 4. Update the `.env` file with your MongoDB connection string and JWT secret:
 

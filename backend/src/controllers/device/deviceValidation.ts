@@ -16,6 +16,12 @@ export const addDeviceSchema = Joi.object({
     }).optional() 
 });
 
+
+export const AIRecommendationSchema = Joi.object({
+    userId: Joi.string().required(),
+    deviceId: Joi.string().required()
+})
+
 export const updateDeviceSchema = Joi.object({
     deviceId: Joi.string().required(),
     userId: Joi.string().required(),
