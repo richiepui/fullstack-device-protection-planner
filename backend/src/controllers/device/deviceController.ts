@@ -259,7 +259,7 @@ export const getAIRecommendations: RequestHandler = async(req, res) => {
     });
 
     const aiRecommendations = response.choices[0].message.content;
-    device.aiRecommendations.push(aiRecommendations || "");
+    device.aiRecommendations = aiRecommendations?.split("\n") || []
     await device.save();
     res.status(200).json({ code: 200, message: "AI Recommendations generated successfully", data: aiRecommendations });
     
